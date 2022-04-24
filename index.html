@@ -1,215 +1,295 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <title>TinDog</title>
-  <!--CSS files -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <!--Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/e57f0d582d.js" crossorigin="anonymous"></script>
-  <!--JS files -->
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Собираем ПК</title>
+    <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"></script>
+    <script src="./js/accordeon.js" defer></script>
+    <script src="./js/modal.js" defer></script>
+    <script src="./js/smoothscroll.js" defer></script>
+    <script src="./js/timer.js" defer></script>
 </head>
 
 <body>
-
-  <section id="title">
-  <div class="container-fluid">
-    <!-- Nav Bar -->
-
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand">tindog</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-  <div class="collapse navbar-collapse  justify-content-end" id="navbarTogglerDemo01">
-    <ul class="navbar-nav ">
-        <li class="nav-item">
-            <a class="nav-link">Contact</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link">Pricing</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link">Download</a>
-        </li>
-    </ul>
-  </div>  
-  </nav>
-
-
-    <!-- Title -->
-    <div class="row no-gutters">
-      <div class="col-lg-6 col-md-12 col-sm-12">
-          <h1>Meet new and interesting dogs nearby.</h1>
-          <button type="button" class="btn btn-lg btn-dark download-button"><i class="fa-brands fa-apple"></i> Download</button>
-          <button type="button" class="btn btn-lg btn-outline-light download-button"><i class="fa-brands fa-google-play"></i> Download</button>
-      </div>
-      <div class="col-lg-6 col-md-12">
-          <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
-      </div>
-    </div>
-  </div>
-  </section>
-
-
-  <!-- Features -->
-
-  <section id="features">
-<div class="container-fluid">
-  <div class="row">
-    <div class="feature-box col-lg-4"> 
-      <i class="icon fa-solid fa-circle-check fa-4x"></i>
-      <h3>Easy to use.</h3>
-      <p>So easy to use, even your dog could do it.</p>
-    </div> 
-
-    <div class="feature-box col-lg-4"> 
-      <i class="icon fa-solid fa-bullseye fa-4x"></i>
-      <h3>Elite Clientele.</h3>
-      <p>We have all the dogs, the greates dogs.</p>
-    </div>
-    
-    <div class="feature-box col-lg-4"> 
-      <i class="icon fa-solid fa-heart fa-4x"></i>
-      <h3>Guaranteed to work.</h3>
-      <p>Find the love of your dog's life or your money back.</p>
-    </div>
-  </div>
-  </div>
-  </section>
-
-
-  <!-- Testimonials -->
-
-  <section id="testimonials">
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-pause='hover'>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
-          <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
-          <em>Pebbles, New York</em>
+    <header class="header">
+        <div class="header__wrap">
+            <a href="#" class="header__logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <div class="header__menu">
+                <nav class="header__nav block-center-horis">
+                    <a href="#work">Чем занимаемся</a>
+                    <a href="#process">Процесс работы</a>
+                    <a href="#command">Команда</a>
+                </nav>
+                <button class="button header__button">Зайти в кабинет</button>
+            </div>
         </div>
-        <div class="carousel-item">
-          <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
-          <img class="testimonial-image" src="images/lady-img.jpg" alt="dog-profile">
-          <em>Beverly, Illionois</em>
+    </header>
+
+    <main>
+        <section class="main-display">
+            <div class="container">
+                <h1 class="main-display__header">Собираем игровой ПК под ваш бюджет</h1>
+                <div class="timer main-display__timer">
+                    <div class="timer__item block-center">
+                        <div class="timer__count timer__days">18</div>
+                        <div class="timer__text">Дней</div>
+                    </div>
+                    <div class="timer__item block-center">
+                        <div class="timer__count timer__hours">18</div>
+                        <div class="timer__text">Часов</div>
+                    </div>
+                    <div class="timer__item block-center">
+                        <div class="timer__count timer__minutes">18</div>
+                        <div class="timer__text">Минут</div>
+                    </div>
+                    <div class="timer__item block-center">
+                        <div class="timer__count timer__seconds">18</div>
+                        <div class="timer__text">Секунд</div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-display__background">
+                <img src="img/main-screen__bgc.jpg" alt="">
+            </div>
+        </section>
+
+        <div class="course">
+            <div class="container">
+                <div class="course__wrap">
+                    <div class="course-button__wrap">
+                        <button class="button course__button">Заказать курс</button>
+                    </div>
+                    <div class="course__counter">
+                        <div class="course__counter-line">
+                            <span>Учеников всего:</span>
+                            <span class="course__number">200</span>
+                        </div>
+                        <div class="course__counter-line">
+                            <span>Успешно закончили курс:</span>
+                            <span class="course__number">190</span>
+                        </div>
+                    </div>
+                    <div class="course__progress">
+                        <div class="course__progress-label">
+                            <span>Заработано учениками:</span>
+                            <span class="course__number">400 000₽</span>
+                        </div>
+                        <div class="course__progress-element">
+                            <progress min="0" max="1000000" value="400000" />
+                        </div>
+                        <div class="course__progress-minmax">
+                            <span>0₽</span>
+                            <span>1 000 000₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
 
-  </section>
+        <section class="work" id="work">
+            <div class="container">
+                <div class="work__wrap">
+                    <div class="work__img">
+                        <img src="img/work__img.png" alt="">
+                    </div>
+                    <div class="work__text">
+                        <h2 class="work__header">Чем мы занимаемся</h2>
+                        <div class="work__description">Помогаем сэкономить до 40% стоимости игрового компьютера без
+                            потери производительности. Подбираем мощные детали компьютера, заказываем у своих
+                            поставщиков или напрямую у производителей, чтобы сэкономить ваши деньги. Собираем мощный
+                            компьютер, на котором можно играть в любые современные игры и заниматься работой.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="process" id="process">
+            <div class="container">
+                <div class="process__wrap">
+                    <div class="process__title block-center-horis">
+                        <div class="process__img">
+                            <img src="img/process-img.svg" alt="">
+                        </div>
+                        <h2 class="process__header">Процесс работы</h2>
+                    </div>
+                    <div class="process__description">Подробно рассказываем о том, как происходит сборка, от заявки до
+                        выдачи вашего заказа</div>
+                    <div class="process__columns">
+                        <div class="process__item">
+                            <div class="process__work">Заявка</div>
+                            <div class="process__text">Мы получаем вашу заявку, связываемся с вами для уточнения
+                                деталей, чтобы понять ваши ожидания от будущего компьютера.</div>
+                        </div>
+                        <div class="process__item">
+                            <div class="process__work">Подбор</div>
+                            <div class="process__text">После оплаты подбираем комплектующие, которые дадут максимальную
+                                производительность. Заказываем их напрямую у поставщиков.</div>
+                        </div>
+                        <div class="process__item">
+                            <div class="process__work">Сборка</div>
+                            <div class="process__text">Собираем компьютер, проводим стартовую диагностику, устанавливаем
+                                операционную систему и необходимые драйверы для работы.</div>
+                        </div>
+                        <div class="process__item">
+                            <div class="process__work">Выдача</div>
+                            <div class="process__text">Отдаём компьютер вам в назначенный срок, проводим вместе
+                                тестирование, подписываем документы о выполнении работы и гарантии.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Press -->
+        <section class="program">
+            <div class="container">
+                <div class="program__image">
+                    <img src="./img/program.svg" alt="">
+                </div>
+                <h2 class="program__header">Программа обучения</h2>
+                <p class="program__description">Больше 90% учеников прошли полный курс и смогли собрать свой первый
+                    компьютер</p>
+                <div class="program__content">
+                    <div class="program-line">
+                        <div class="program-line__content">
+                            <h3 class="program-line__title">Неделя №1</h3>
+                            <p class="program-line__descr active">
+                                Красивая часть курса,
+                                которая помогает в успехе
+                            </p>
+                        </div>
+                        <div class="program-line__content">
+                            <h3 class="program-line__title">Неделя №2</h3>
+                            <p class="program-line__descr">
+                                Красивая часть курса,
+                                которая помогает в успехе
+                            </p>
+                        </div>
+                    </div>
+                    <div class="program-line">
+                        <div class="program-line__content">
+                            <h3 class="program-line__title">Неделя №3</h3>
+                            <p class="program-line__descr">
+                                Красивая часть курса,
+                                которая помогает в успехе
+                            </p>
+                        </div>
+                        <div class="program-line__content">
+                            <h3 class="program-line__title">Неделя №4</h3>
+                            <p class="program-line__descr">
+                                Красивая часть курса,
+                                которая помогает в успехе
+                            </p>
+                        </div>
+                    </div>
+                    <div class="program-line">
+                        <div class="program-line__content">
+                            <h3 class="program-line__title">Неделя №5</h3>
+                            <p class="program-line__descr">
+                                Красивая часть курса,
+                                которая помогает в успехе
+                            </p>
+                        </div>
+                        <div class="program-line__content">
+                            <h3 class="program-line__title">Неделя №6</h3>
+                            <p class="program-line__descr">
+                                Красивая часть курса,
+                                которая помогает в успехе
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <section id="press">
-    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
-    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
-    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
-    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+        <section class="command" id="command">
+            <div class="container">
+                <div class="process__title command__title">
+                    <div class="process__img command__img-title">
+                        <img src="img/comand.svg" alt="">
+                    </div>
+                    <h2 class="process__header">Наша команда</h2>
+                </div>
+                <div class="command__wrap">
+                    <div class="command__item block-center-horis">
+                        <div class="command__img">
+                            <img src="img/com-1.png" alt="">
+                        </div>
+                        <h3 class="command__name">Евгений Петров</h3>
+                        <div class="command__profession">Специалист по видеокартам</div>
+                        <button class="button command__button">Биография</button>
+                    </div>
+                    <div class="command__item block-center-horis">
+                        <div class="command__img">
+                            <img src="img/com-2.png" alt="">
+                        </div>
+                        <h3 class="command__name">Алексей Козлов</h3>
+                        <div class="command__profession">Специалист по видеокартам</div>
+                        <button class="button command__button">Биография</button>
+                    </div>
+                    <div class="command__item block-center-horis">
+                        <div class="command__img">
+                            <img src="img/com-3.png" alt="">
+                        </div>
+                        <h3 class="command__name">Дмитрий Иванов</h3>
+                        <div class="command__profession">Специалист по видеокартам</div>
+                        <button class="button command__button">Биография</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  </section>
+        <section class="assembly">
+            <div class="container">
+                <div class="assembly__wrap block-center-horis">
+                    <h2 class="assembly__header">Закажите свою уникальную сборку</h2>
+                    <div class="assembly__description">Мы свяжемся с вами, чтобы уточнить детали заказа</div>
+                    <button class="button assembly__button  modal__button">Оставить заявку</button>
+                    <div class="assembly__socials">
+                        <div class="assembly__item block-center">
+                            <img src="img/vk.svg" alt="">
+                        </div>
+                        <div class="assembly__item block-center">
+                            <img src="img/ytb.svg" alt="">
+                        </div>
+                        <div class="assembly__item block-center">
+                            <img src="img/fb.svg" alt="">
+                        </div>
+                        <div class="assembly__item block-center">
+                            <img src="img/inst.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-
-  <!-- Pricing -->
-
-  <section id="pricing">
-
-    <h2>A Plan for Every Dog's Needs</h2>
-    <p>Simple and affordable price plans for your and your dog.</p>
-    
-    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-
-      <div class="pricing-column col-lg-4 col-md-6">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h5 class="my-0 fw-normal">Chihuahua</h5>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">Free</h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <p>5 Matches Per Day</p>
-              <p>10 Messages Per Day</p>
-              <p>Unlimited App Usage</p>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-block btn-outline-primary">Sign up</button>
-          </div>
+    <form action="#" class="modal block-center">
+        <div class="modal__inner">
+            <h1 id="cancel-button"><button type="button">X</button></h1>
+            <div class="modal__header">Заявка на сборку ПК</div>
+            <div class="modal__subheader">Мы свяжемся с вами, чтобы обсудить детали заказа</div>
+            <div class="modal__elements block-center-horis">
+                <div class="modal__input">
+                    <input type="text" class="modal__input">
+                </div>
+                <div class="modal__input">
+                    <input type="tel" class="modal__input">
+                </div>
+                <div class="modal__input">
+                    <input type="email" class="modal__input">
+                </div>
+                <button type="button" class="button modal__button">Отправить</button>
+                
+            </div>
         </div>
-      </div>
-      <div class="pricing-column col-lg-4 col-md-6">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Labrador</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$49<small class="text-muted fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-                <p>Unlimited Matches</p>
-                <p>Unlimited Messages</p>
-                <p>Unlimited App Usage</p>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up</button>
-          </div>
-        </div>
-      </div>
-      <div class="pricing-column col-lg-4 col-md-6">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Mastiff</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$99<small class="text-muted fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-                <p>Pirority Listing</p>
-                <p>Unlimited Matches</p>
-                <p>Unlimited Messages</p>
-                <p>Unlimited App Usage</p>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Sign up</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-
-  <!-- Call to Action -->
-
-  <section id="cta">
-
-    <h3>Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
-
-  </section>
-
-
-  <!-- Footer -->
-
-  <footer id="footer">
-
-    <p>© Copyright TinDog</p>
-
-  </footer>
+    </form>
 </body>
 
 </html>
